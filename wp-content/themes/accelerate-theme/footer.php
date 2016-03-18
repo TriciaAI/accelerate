@@ -19,12 +19,14 @@
 				<p><?php bloginfo('description'); ?></p>
 				<p>&copy; <?php bloginfo('title'); ?>, LLC
 				</div>
-				
-			<nav class="social-media-navigation" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
-			</nav>
 
-				
+			<div class="social-btns">
+				<a href="http://twitter.com" class="soc-icon tw"></a>
+				<a href="http://www.facebook.com" class="soc-icon fb"></a>
+				<a href="http://www.linkedin.com" class="soc-icon ln"></a>
+			</div>
+
+
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
