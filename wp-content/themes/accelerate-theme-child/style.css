@@ -179,6 +179,10 @@ div.case-study p {
 
 /*page-about.php*/
 
+.homepage-hero {
+    
+}
+
 div.text {
     font-size: 20px;
 	font-family: 'Montserrat';
@@ -230,13 +234,13 @@ text-align: left;
 .image_4 {
 }
 
-.interested {
-    text-align: center;
+div.interested {
+    float: left;
 }
 
 
 
-.button {
+div.button {
     background: none repeat scroll 0 0 #45ac9d;
     float: right;
     
