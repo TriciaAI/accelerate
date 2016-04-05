@@ -118,5 +118,127 @@ div.case-study p {
     font-size: 12px;
     color: #878787;
     margin-top: 8px;
-  }
 }
+
+
+/*Ninja forms contact form*/
+
+.ninja-forms-form-wrap, div#content {
+  width: 620px;
+  margin: 50px auto 0;
+  padding-bottom: 85px;
+}
+
+.field-wrap {
+  margin-bottom: 20px;
+}
+
+.narrow-content #content h2 {
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+.narrow-content #content p {
+	margin-bottom: 30px;
+  font-size: 16px;
+}
+
+#ninja_forms_field_1_div_wrap, #ninja_forms_field_2_div_wrap {
+	width: 50%;
+	margin-bottom: 30px;
+}
+
+
+#ninja_forms_field_1_div_wrap {
+	float: left;
+}
+
+#ninja_forms_field_2_div_wrap {
+	float: right;
+  padding-left: 10px;
+}
+
+#ninja_forms_field_1_label, #ninja_forms_field_2_label, #ninja_forms_field_3_label {
+	font-size: 14px;
+}
+
+#ninja_forms_field_5 {
+  font-size: 16px;
+	font-family: 'Montserrat';
+	color: #ffffff;
+  background-color: #45ac9d;
+  padding-left: 30px;
+  padding-right: 30px;
+  float: right;
+}
+
+#ninja_forms_field_1, #ninja_forms_field_2, #ninja_forms_field_3, #ninja_forms_field_5 {
+  border: #bfbfbf solid 1px;
+}
+
+
+/*page-about.php*/
+
+div.text {
+    font-size: 20px;
+	font-family: 'Montserrat';
+    color: #ffffff;
+    text-align: center;
+    width: 50%;
+    display: inline-block;
+}
+
+.accelerate {
+    color:#45ac9d;
+    font-weight:bold;
+}
+
+.site-content {
+    width: 800px;
+    font-size: 16px;
+}
+
+.our-services {
+    text-align: center;
+}
+
+h4 {
+text-align: left;
+}
+
+.content-strategy {
+}
+
+.image_1 {
+}
+
+.influencer-mapping {
+}
+
+.image_2 {
+}
+
+.social-media-strategy {
+}
+
+.image_3 {
+}
+
+.design-development {
+}
+
+.image_4 {
+}
+
+.interested {
+    text-align: center;
+}
+
+
+
+.button {
+    background: none repeat scroll 0 0 #45ac9d;
+    float: right;
+    
+}
+
