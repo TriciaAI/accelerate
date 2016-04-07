@@ -246,3 +246,24 @@ div.button {
     
 }
 
+/* 404 page */
+
+div.sorry {
+    float:right;
+    margin-bottom: 200px;
+}
+
+h2, a {
+    color: #45ac9d;
+}
+
+p {
+    color: #878787;
+}
+
+img.align-center {
+    display: block;
+    margin: 0 auto;
+}
+    
+}
