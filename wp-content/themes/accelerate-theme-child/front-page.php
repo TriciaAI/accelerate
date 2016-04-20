@@ -67,11 +67,17 @@ get_header(); ?>
 			<?php wp_reset_query(); // resets the altered query back to the original ?>
         </div>
 
+        <!--sidebar to host twitter module -->
+        
 <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
 <div id="secondary" class="widget-area" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-2' ); ?>
 </div>
+    
 <?php endif; ?>
+
+    </div>
+</section>
         
         
 

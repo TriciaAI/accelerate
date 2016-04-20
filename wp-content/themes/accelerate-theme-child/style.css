@@ -45,7 +45,7 @@
 }
 
 .blog-post {
-	width: 50%;
+	width: 40%;
 }
 
 .blog-post h4 {
@@ -244,3 +244,29 @@ img.align-center {
 }
     
 }
+
+/* Twitter feed */
+
+#secondary.widget-area.widget.pi_simpletwittertweets-2 {
+    float: right;
+    width:45%;
+}
+    
+.widget-title {
+    color: #a6a6a6;
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+    
+#pi_simpletwittertweets-2>ul>li {
+    font-weight: normal;
+    margin-left: 20px;
+    list-style: none;
+}
+
+.tweets {
+    width: 40%;
+    float: right;
+}
+
