@@ -72,7 +72,7 @@ get_header(); ?>
 	<?php dynamic_sidebar( 'sidebar-2' ); ?>
 </div>
 <?php endif; ?>
-	</div>
-</section>
+        
+        
 
 <?php get_footer(); ?>
