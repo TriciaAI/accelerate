@@ -17,6 +17,11 @@
 
 }
 
+.main-content {
+    width: 60%;
+    float: left;
+}
+
 .featured-work h4 {
 	font-family: 'Montserrat';
   text-align: center;
@@ -45,7 +50,8 @@
 }
 
 .blog-post {
-	width: 40%;
+	width: 50%;
+    float: left;
 }
 
 .blog-post h4 {
@@ -249,7 +255,7 @@ img.align-center {
 
 #secondary.widget-area.widget.pi_simpletwittertweets-2 {
     float: right;
-    width:45%;
+    width:50%;
 }
     
 .widget-title {

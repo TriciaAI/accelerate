@@ -49,12 +49,16 @@
             'has_archive' => false 
         )
     );
-     
-    
+ }
+add_action( 'init', 'create_custom_post_types' );
+
+
+     function accelerate_theme_child_widget_init() {
+         //Register sidebar for twitter module
     register_sidebar( array(
-	'name' =>__( 'Homepage sidebar', 'homepage-sidebar'),
+	'name' =>__( 'Homepage sidebar', 'accelerate-theme-child'),
 	'id' => 'sidebar-2',
-	'description' => __( 'Appears on the static front page template', 'homepage-sidebar' ),
+	'description' => __( 'Appears on the static front page template', 'accelerate-theme-child' ),
 	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 	'after_widget' => '</aside>',
 	'before_title' => '<h3 class="widget-title">',
@@ -62,7 +66,7 @@
 ) );
      
  }
-add_action( 'init', 'create_custom_post_types' );
+add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );
 
 
 
