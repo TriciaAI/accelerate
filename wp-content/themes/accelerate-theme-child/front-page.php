@@ -67,15 +67,19 @@ get_header(); ?>
 			<?php wp_reset_query(); // resets the altered query back to the original ?>
         </div>
 
-        <!--sidebar to host twitter module -->
         
-<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-<div id="secondary" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-2' ); ?>
-</div>
-    
-<?php endif; ?>
+        <!-- Sidebar to host the twitter module -->		 
+		 <?php
+		 	$twitter_link = get_field('twitter_link');
+		 	$link_name = get_field('link_name');
+		 ?>
 
+		 <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+			 <div id="secondary" class="widget-area tweet-module" role="complementary">
+				 <a href="<?php echo $twitter_link ?>"><?php dynamic_sidebar( 'sidebar-2' ); ?></a>
+				 <a href="<?php echo $twitter_link ?>" class="follow-us-link"><?php echo $link_name; ?><span> &rsaquo;</span></a>
+			 </div>		 
+		 <?php endif; ?>
     </div>
 </section>
         

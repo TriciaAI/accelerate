@@ -30,14 +30,14 @@ get_header(); ?>
     <?php while (have_posts() ) : the_post();
 
 $service_text = get_field('service_text');
-$icon = get_field('icon'); ?>
+$image = get_field('image'); ?>
 
     <h2><?php the_title(); ?></h2>
     <p><?php echo $service_text; ?></p>
     
     <div class="services-icons">
-      <?php if($icon) {
-        echo wp_get_attachment_image( $icon, $size );
+      <?php if($image) {
+        echo wp_get_attachment_image( $image, $size );
     } ?>
     
     </div> <!--.services-icons -->

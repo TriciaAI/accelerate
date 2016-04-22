@@ -54,11 +54,13 @@ add_action( 'init', 'create_custom_post_types' );
 
 
      function accelerate_theme_child_widget_init() {
-         //Register sidebar for twitter module
-    register_sidebar( array(
-	'name' =>__( 'Homepage sidebar', 'accelerate-theme-child'),
+         
+         
+// Register dynamic sidebar.
+register_sidebar( array(
+	'name' =>__( 'Homepage sidebar', 'homepage-sidebar'),
 	'id' => 'sidebar-2',
-	'description' => __( 'Appears on the static front page template', 'accelerate-theme-child' ),
+	'description' => __( 'Appears on the static front page template', 'homepage-sidebar' ),
 	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 	'after_widget' => '</aside>',
 	'before_title' => '<h3 class="widget-title">',
