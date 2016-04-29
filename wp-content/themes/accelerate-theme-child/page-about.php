@@ -25,6 +25,11 @@ get_header(); ?>
 <!-- section with text and images that belong to the services custom post type -->
     
     <section class="service-section">
+        
+        <div class="our-services"><h4>OUR SERVICES</h4>
+        <p>We take pride in our clients and the content we create for them. 
+Here’s a brief overview of our offered services.</p>
+        </div>
     
     <?php query_posts("post_type=services&order=asc"); ?>
     <?php while (have_posts() ) : the_post();
@@ -32,24 +37,24 @@ get_header(); ?>
 $service_text = get_field('service_text');
 $image = get_field('image'); ?>
 
-    <h2><?php the_title(); ?></h2>
-    <p><?php echo $service_text; ?></p>
     
+    <article class="individual-service">
     <div class="services-icons">
       <?php if($image) {
         echo wp_get_attachment_image( $image, $size );
     } ?>
-    
     </div> <!--.services-icons -->
         
-        
+    <div class="services-text">
+    <h2><?php the_title(); ?></h2>
+    <p><?php echo $service_text; ?></p>
+    </div>    
+    </article>    
         <?php endwhile; // end of the loop. 
         wp_reset_query(); ?>
         
     </section> <!--.service-section -->
-
-
-</div><!--site-content -->
+ 
 
     
 <section class="work-with-us">

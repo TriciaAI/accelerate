@@ -69,7 +69,8 @@ get_header(); ?>
 
         
         <!-- Sidebar to host the twitter module -->		 
-		 <?php
+<div class="widget-area">	
+        <?php
 		 	$twitter_link = get_field('twitter_link');
 		 	$link_name = get_field('link_name');
 		 ?>
@@ -81,6 +82,7 @@ get_header(); ?>
 			 </div>		 
 		 <?php endif; ?>
     </div>
+        </div>	
 </section>
         
         
